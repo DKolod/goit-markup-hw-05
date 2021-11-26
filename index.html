@@ -62,7 +62,9 @@
     <main class="main">
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <button class="hero-button" type="button" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
       <section class="info">
         <div class="container">
@@ -131,24 +133,30 @@
                   height="294"
                   alt="верстка"
                 />
-                <p>Десктопные приложения</p>
+                <p class="monoblock-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="skils-item">
-              <img
-                src="./images/box-2-min.jpg"
-                width="370"
-                height="294"
-                alt="адаптивная верстка"
-              />
+              <div class="item-monoblock">
+                <img
+                  src="./images/box-2-min.jpg"
+                  width="370"
+                  height="294"
+                  alt="адаптивная верстка"
+                />
+                <p class="monoblock-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="skils-item">
-              <img
-                src="./images/box-3-min.jpg"
-                width="370"
-                height="294"
-                alt="дизайн"
-              />
+              <div class="item-monoblock">
+                <img
+                  src="./images/box-3-min.jpg"
+                  width="370"
+                  height="294"
+                  alt="дизайн"
+                />
+                <p class="monoblock-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -465,5 +473,16 @@
         </div>
       </div>
     </footer>
+    .is-hidden {
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
